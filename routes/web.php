@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
 Route::get('/home', 'WebController@index')->name('home');
 Route::get('/webAnalytics', 'WebController@index')->name('web');
 Route::get('/salesAnalytics', 'SaleController@index')->name('sales');
@@ -24,4 +25,3 @@ Route::get('/appAnalytics', 'AppController@index')->name('app');
 Route::get('/help', 'HelpController@index')->name('help');
 Route::get('/finance', 'FinanceController@index')->name('finance');
 Route::get('/products', 'ProductController@index')->name('product');
-
