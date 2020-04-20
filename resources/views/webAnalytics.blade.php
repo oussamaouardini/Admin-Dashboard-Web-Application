@@ -405,7 +405,7 @@
             setInterval(updatechart1, 1000);
 
             function updatechart1() {
-                var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+               // var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                 $.ajax({
                     url: "{{ route('api.chart') }}",
                     type: 'GET',

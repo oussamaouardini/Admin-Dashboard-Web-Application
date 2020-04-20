@@ -427,8 +427,84 @@
     <script>
         $(function(){
             'use strict';
+            var flotChartoptions = {
+                series: {
+                    shadowSize: 0,
+                    lines: {
+                        show: true,
+                        lineWidth: 2,
+                        fill: true
+                    }
+                },
+                grid: {
+                    borderWidth: 0,
+                    labelMargin: 8
+                },
+                yaxis: {
+                    show: true,
+                    min: 0,
+                    max: 100,
+                    ticks: [[0, ''], [20, '20K'], [40, '40K'], [60, '60K'], [80, '80K']],
+                    tickColor: '#eee'
+                },
+                xaxis: {
+                    show: true,
+                    color: '#fff',
+                    ticks: [[25, 'OCT 21'], [75, 'OCT 22'], [100, 'OCT 23'], [125, 'OCT 24']],
+                }
+            };
+            var flotchartdataset1 = [[0, 12], [1, 15], [3, 50]];
+            var flotchartdataset2 = [[0, 12], [1, 15], [3, 50]];
+            var flotchartdata = [{
+                data: flotchartdataset1,
+                color: '#007bff',
+                lines: {
+                    fillColor: {colors: [{opacity: 0}, {opacity: 0.2}]}
+                }
+            }, {
+                data: flotchartdataset2,
+                color: '#560bd0',
+                lines: {
+                    fillColor: {colors: [{opacity: 0}, {opacity: 0.2}]}
+                }
+            }];
+            updatechart1();
+            setInterval(updatechart1, 1000);
 
-            var plot = $.plot('#flotChart', [{
+            function updatechart1() {
+               // var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                $.ajax({
+                    url: "{{ route('api.chart') }}",
+                    type: 'GET',
+                    dataType: 'json',
+                    // headers: {
+                    //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    // },
+                    success: function (data) {
+                        console.log("success");
+                        flotchartdataset1 = data.data1;
+                        flotchartdataset2 = data.data2;
+                        flotchartdata = [{
+                            data: flotchartdataset1,
+                            color: '#007bff',
+                            lines: {
+                                fillColor: {colors: [{opacity: 0}, {opacity: 0.2}]}
+                            }
+                        }, {
+                            data: flotchartdataset2,
+                            color: '#560bd0',
+                            lines: {
+                                fillColor: {colors: [{opacity: 0}, {opacity: 0.2}]}
+                            }
+                        }];
+                        $.plot('#flotChart', flotchartdata, flotChartoptions);
+                        },
+                    error: function(data){
+                        console.log("Error");
+                    }
+                });
+            }
+            {{-- var plot = $.plot('#flotChart', [{
                 data: flotSampleData3,
                 color: '#007bff',
                 lines: {
@@ -465,7 +541,7 @@
                     color: '#fff',
                     ticks: [[25,'OCT 21'],[75,'OCT 22'],[100,'OCT 23'],[125,'OCT 24']],
                 }
-            });
+            }); --}}
 
             $.plot('#flotChart1', [{
                 data: dashData2,

@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5db54415-4796-4902-9566-3fddfd860c3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/appAnalytics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/appAnalytics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/finance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/finance.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/help.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/help.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/salesAnalytics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/salesAnalytics.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/webAnalytics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/webAnalytics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +153,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -215,6 +207,9 @@
       <workItem from="1585061565848" duration="570000" />
       <workItem from="1585066361041" duration="4805000" />
       <workItem from="1585087396890" duration="645000" />
+      <workItem from="1585142509640" duration="2832000" />
+      <workItem from="1585245294891" duration="1257000" />
+      <workItem from="1585435219632" duration="742000" />
     </task>
     <servers />
   </component>
@@ -255,10 +250,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="746" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584835880161" />
-    <state x="550" y="117" width="981" height="707" key="SettingsEditor" timestamp="1584977203583">
+    <state x="550" y="117" width="981" height="707" key="SettingsEditor" timestamp="1585435959602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="117" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584977203583" />
+    <state x="550" y="117" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585435959602" />
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1580585306527" />
     <state x="444" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584815380056">
       <screen x="0" y="0" width="1536" height="824" />

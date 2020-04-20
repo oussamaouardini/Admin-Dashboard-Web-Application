@@ -161,7 +161,6 @@
 @yield('script')
 <script>
     CheckNotification();
-
     //setInterval(CheckNotification,2000);
     function CheckNotification() {
         $.ajax({
